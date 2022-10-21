@@ -7,6 +7,59 @@
     <title>Projeto Pessoal - Formulário</title>
 </head>
 <body>
-    
+    <div>
+        <h1>Cadastro para novos clubes de futebol</h1>
+        <p>Faça o cadastro do seu time nos enviando as informações a seguir</p>
+    </div><br>
+
+    <form method="get" action="index.html" enctype="multipart/form-data">
+        <div class="input-texto">
+            <input type="text" name="nome" id="nome" placeholder="Nome do Time" required>
+            <input type="text" name="tecnico" id="nome" placeholder="Nome do Técnico">
+        </div><br>
+
+        <div class="quantidade-jogadores">
+            <label for="quantidade-jogadores">Quantos jogadores há no time:</label><br>
+            <input type="number" name="quantidade-jogadores" id="quantidade-jogadores" min="1" max="14">
+        </div><br>
+
+        <div class="sexo">
+            <label for="sexo">O time é:</label>
+            <input type="radio" name="sexo" id="sexo" value="Feminino"> Feminino
+            <input type="radio" name="sexo" id="sexo" value="Masculino"> Masculino
+        </div><br>
+
+        <div class="idade-time">
+            <label for="idade-time">Data de criação:</label>
+            <input type="month">
+        </div><br>
+
+        <div class="modalidade">
+            <label>Selecione a(as) modalidade que o time participa:</label><br>
+                <label for="futsal">Futsal</label>
+                <input type="checkbox" name="futsal" id="futsal">
+                <label for="society">Society</label>
+                <input type="checkbox" name="society" id="society">
+                <label for="campo">Campo</label>
+                <input type="checkbox" name="campo" id="campo">
+        </div><br>
+
+        <div class="cores">
+            <label for="cores">Cores do time:</label><br>
+            <input type="color" name="cor" id="cor"> Cor Princípal <br>
+            <input type="color" name="cor" id="cor"> Cor Secundária
+        </div><br>
+
+        <div class="logo">
+            <label for="logo-time">Tem uma logo do seu time? Selecione o arquivo</label><br>
+            <input type="file" name="logo-time" id="logo-time" accept="image/jpg, image/jpeg">
+        </div><br>
+
+        <div class="descricao">
+            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Nos conte um pouco sobre seu time"></textarea>
+        </div><br>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
