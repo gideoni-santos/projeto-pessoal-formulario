@@ -1,0 +1,86 @@
+body {
+    background-image: url(../imagens/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Baloo 2', monospace;
+    color: #f3f3f3;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+.cartao {
+    background-color: #030022f3;
+    border: 2px solid #00000088;
+    width: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.titulo {
+   
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.input-texto {
+    margin-top: 10px;
+}
+
+.nome {
+    margin-right: 20px;
+    width: 284px;
+    padding: 4px;
+}
+
+.tecnico {
+    width: 284px;
+    padding: 4px;
+}
+
+.cores {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+.cor1 {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.cor2 {
+    margin-left: 10px;
+}
+
+.informacoes {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 30px;
+}
+
+.sexo {
+    margin-right: 220px;
+}
+
+.futsal {
+    margin-right: 20px;
+}
+
+.society {
+    margin-right: 20px;
+}
+
+.butao {
+    padding: 5px;
+    background-color: #8076bd;
+    border-radius: 10px;
+}
+
